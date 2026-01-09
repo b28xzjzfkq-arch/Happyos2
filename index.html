@@ -6,154 +6,57 @@
     <title>HappyOS Store</title>
     <style>
         :root { --accent: #30d158; --bg: #000; --card: #1c1c1e; }
-        body { background: var(--bg); color: #fff; font-family: -apple-system, sans-serif; margin: 0; }
+        body { background: var(--bg); color: #fff; font-family: -apple-system, sans-serif; margin: 0; padding-bottom: 50px; }
         .header { padding: 40px 20px; border-bottom: 0.5px solid #222; }
         .header h1 { margin: 0; font-size: 32px; font-weight: 800; }
         .header p { color: var(--accent); margin: 0; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
         .container { padding: 20px; }
-        .app-card { background: var(--card); border-radius: 22px; padding: 18px; display: flex; align-items: center; margin-bottom: 15px; border: 1px solid #2c2c2e; }
+        .app-card { background: var(--card); border-radius: 22px; padding: 15px; display: flex; align-items: center; margin-bottom: 15px; border: 1px solid #2c2c2e; }
         .app-icon { width: 60px; height: 60px; border-radius: 14px; margin-right: 15px; background: #333; }
         .app-info { flex: 1; }
-        .app-info h3 { margin: 0; font-size: 17px; }
-        .app-info p { margin: 3px 0 0; font-size: 12px; color: #8e8e93; }
-        .install-btn { background: var(--accent); color: #000; padding: 10px 22px; border-radius: 20px; text-decoration: none; font-weight: 800; font-size: 13px; transition: 0.2s; }
-        .install-btn:active { transform: scale(0.9); }
+        .app-info h3 { margin: 0; font-size: 16px; }
+        .app-info p { margin: 2px 0 0; font-size: 11px; color: #8e8e93; }
+        .btn-box { display: flex; flex-direction: column; gap: 6px; }
+        .btn { padding: 8px 12px; border-radius: 15px; text-decoration: none; font-size: 11px; font-weight: bold; text-align: center; min-width: 80px; }
+        .btn-install { background: var(--accent); color: #000; }
+        .btn-ipa { background: #333; color: #fff; border: 1px solid #444; }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <p>CERTIFIED MODS ONLY</p>
+    <p>MOBILE MOD HUB</p>
     <h1>HappyOS</h1>
 </div>
 
 <div class="container">
     <div class="app-card">
-        <div class="app-icon" style="background: url('https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg') center/cover;"></div>
+        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg">
         <div class="app-info">
             <h3>GTA San Andreas</h3>
-            <p>Certified Download</p>
+            <p>2.1 GB • Modded</p>
         </div>
-        <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
+        <div class="btn-box">
+            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="btn btn-install">INSTALL</a>
+            <a href="https://ipa.ipasign.cc/ipa/gtasa.ipa" class="btn btn-ipa">GET IPA</a>
+        </div>
     </div>
 
     <div class="app-card">
-        <div class="app-icon" style="background: url('https://mc-pc.net/uploads/posts/2021-09/1632133271_minecraft-icon.png') center/cover;"></div>
+        <img class="app-icon" src="https://mc-pc.net/uploads/posts/2021-09/1632133271_minecraft-icon.png">
         <div class="app-info">
             <h3>Minecraft</h3>
-            <p>Premium Mod</p>
+            <p>320 MB • Full</p>
         </div>
-        <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
-    </div>
-</div>
-
-<div style="text-align:center; padding:40px; color:#444; font-size:10px; letter-spacing: 2px;">
-    BY HAPPYOS TEAM
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HappyOS Store | Mod Hub</title>
-    <style>
-        :root { --accent: #30d158; --bg: #000; --card: #1c1c1e; --gray: #8e8e93; }
-        body { background: var(--bg); color: #fff; font-family: -apple-system, sans-serif; margin: 0; }
-        .header { padding: 40px 20px 20px; border-bottom: 0.5px solid #222; }
-        .header h1 { margin: 0; font-size: 34px; font-weight: 800; }
-        .header p { color: var(--accent); margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
-        
-        .section-title { padding: 20px 20px 5px; font-size: 13px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; }
-        .container { padding: 10px 20px; }
-        
-        .app-card { background: var(--card); border-radius: 20px; padding: 15px; display: flex; align-items: center; margin-bottom: 12px; border: 1px solid #2c2c2e; transition: 0.2s; }
-        .app-card:active { transform: scale(0.97); background: #2c2c2e; }
-        
-        .app-icon { width: 58px; height: 58px; border-radius: 13px; margin-right: 15px; background: #333; object-fit: cover; }
-        .app-info { flex: 1; }
-        .app-info h3 { margin: 0; font-size: 16px; font-weight: 600; }
-        .app-info p { margin: 3px 0 0; font-size: 11px; color: var(--gray); }
-        
-        .btn-group { display: flex; flex-direction: column; gap: 5px; }
-        .install-btn { background: var(--accent); color: #000; padding: 6px 16px; border-radius: 18px; text-decoration: none; font-weight: 800; font-size: 11px; text-align: center; }
-        .ipa-btn { background: #333; color: #fff; padding: 6px 16px; border-radius: 18px; text-decoration: none; font-weight: 600; font-size: 11px; text-align: center; }
-        
-        .footer { text-align: center; padding: 40px; color: #333; font-size: 10px; letter-spacing: 3px; }
-    </style>
-</head>
-<body>
-
-<div class="header">
-    <p>THE MOD ARCHIVE</p>
-    <h1>HappyOS Store</h1>
-</div>
-
-<div class="section-title">Premium Games</div>
-<div class="container">
-    <div class="app-card">
-        <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/91/3c/6e/913c6e4e-09a1-09a8-e7c6-2c9339e72844/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg">
-        <div class="app-info">
-            <h3>GTA San Andreas</h3>
-            <p>Full Mod Menu • 2.1 GB</p>
-        </div>
-        <div class="btn-group">
-            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
-        </div>
-    </div>
-
-    <div class="app-card">
-        <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/10/7c/7f/107c7f12-9f93-4a11-85d8-6c61f2f01f4c/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg">
-        <div class="app-info">
-            <h3>Minecraft</h3>
-            <p>Unlocked All • 320 MB</p>
-        </div>
-        <div class="btn-group">
-            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
+        <div class="btn-box">
+            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="btn btn-install">INSTALL</a>
+            <a href="https://ipa.ipasign.cc/ipa/minecraft.ipa" class="btn btn-ipa">GET IPA</a>
         </div>
     </div>
 </div>
 
-<div class="section-title">Apps & Tools</div>
-<div class="container">
-    <div class="app-card">
-        <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/7e/34/08/7e34083b-967a-f901-447a-85317781b072/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg">
-        <div class="app-info">
-            <h3>YouTube Premium</h3>
-            <p>No Ads • Background Play</p>
-        </div>
-        <div class="btn-group">
-            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
-        </div>
-    </div>
-
-    <div class="app-card">
-        <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/31/35/0e/31350e82-e64e-7612-4048-c8a77916a04a/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg">
-        <div class="app-info">
-            <h3>Spotify++</h3>
-            <p>Unlimited Skips • Ad-Free</p>
-        </div>
-        <div class="btn-group">
-            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
-        </div>
-    </div>
-
-    <div class="app-card">
-        <div class="app-icon" style="background: linear-gradient(135deg, #ff3b30, #ff2d55);"></div>
-        <div class="app-info">
-            <h3>Scarlet Tool</h3>
-            <p>System Signer • Essential</p>
-        </div>
-        <div class="btn-group">
-            <a href="itms-services://?action=download-manifest&url=https://usescarlet.com/manifest.plist" class="install-btn">INSTALL</a>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    HAPPYOS v2.5 - 2026
+<div style="text-align:center; padding:20px; font-size:12px; color:var(--accent);">
+    Tip: If "Install" fails, use "Get IPA"
 </div>
 
 </body>
